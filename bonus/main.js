@@ -25,9 +25,9 @@
 
 //dichiarazione della varabile di iterazione
 var i =1;
-var msg;
+var msg = "";
   do {
-   if ( i % 3 ===0 &&  i % 5 ===0) {
+   if ( i % 3 ===0 && i % 5 ===0) {
      //se è si, stamperò la stringa "FizzBuzz"
      msg = msg + "<li>FizzBuzz</li>";
      //se è no, passerò al controllo successivo
