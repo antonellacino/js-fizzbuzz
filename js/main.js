@@ -12,16 +12,14 @@ for (var i = 1; i <= 100; i++) {
     //se è si, stamperò la stringa "FizzBuzz"
     console.log("FizzBuzz");
     //se è no, passerò al controllo successivo
-  } else if ( i % 3 > 0 &&  i % 5 > 0) {//non è divisibile x nessuno dei 2?
-    //allora scrivo se stesso
-    console.log(i);
-    //è divisibile x3?
-  } else if (i % 3 ===0) {
+  } else if (i % 3 === 0) {//è divisibile x3?
     //se si, stamerò “Fizz” al posto del numero
     console.log("Fizz");
     //se è no, passerò al controllo successivo
-  } else if (i % 5 ===0) {//è divisibile x5?
+  } else if (i % 5 === 0) {//è divisibile x5?
     //se si, stamerò “Buzz” al posto del numero
     console.log("Buzz");
+  } else {
+    console.log(i);
   }
 }
