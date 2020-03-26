@@ -6,15 +6,15 @@ var msg = "";
  while (i <= 100){
    if ( i % 3 ===0 &&  i % 5 ===0) {
      //se è si, stamperò la stringa "FizzBuzz"
-     msg = msg + "<li>FizzBuzz</li>";
+     msg = msg + "<li class='fizzBuzz'>FizzBuzz</li>";
      //se è no, passerò al controllo successivo
    } else if (i % 3 === 0) {//è divisibile x3?
      //se si, stamerò “Fizz” al posto del numero
-     msg = msg + "<li>Fizz</li>";
+     msg = msg + "<li class='fizz'>Fizz</li>";
      //se è no, passerò al controllo successivo
    } else if (i % 5 === 0) {//è divisibile x5?
      //se si, stamerò “Buzz” al posto del numero
-       msg = msg + "<li>Buzz</li>";
+       msg = msg + "<li class='buzz'>Buzz</li>";
    } else {
      msg = msg + "<li>" + i + "</li>" ;
    }

@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding-left: 30px;
+  font-weight: bold;
+    font-size: 20px;
+}
+.fizz{
+  color: green;
+}
+.buzz{
+  color: blue;
+}
+.fizzBuzz{
+  font-size: 30px;
+  color: red;
+}
