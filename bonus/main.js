@@ -24,21 +24,25 @@
 //Variante con il do while
 
 //dichiarazione della varabile di iterazione
-var i = 1;
+var i =1;
+var msg;
   do {
    if ( i % 3 ===0 &&  i % 5 ===0) {
      //se è si, stamperò la stringa "FizzBuzz"
-     console.log("FizzBuzz");
+     msg = msg + "<li>FizzBuzz</li>";
      //se è no, passerò al controllo successivo
    } else if (i % 3 === 0) {//è divisibile x3?
      //se si, stamerò “Fizz” al posto del numero
-     console.log("Fizz");
+      msg = msg + "<li>Fizz</li>";
      //se è no, passerò al controllo successivo
    } else if (i % 5 === 0) {//è divisibile x5?
      //se si, stamerò “Buzz” al posto del numero
-     console.log("Buzz");
+      msg = msg + "<li>Buzz</li>";
    } else {
-     console.log(i);
+      msg = msg + "<li>" + i + "</li>" ;
    }
    i++;
- } while (i <= 100)
+   document.getElementById('id').innerHTML = msg;
+   msg = document.getElementById('id').innerHTML;
+   console.log(i);
+ } while (i <=100)
